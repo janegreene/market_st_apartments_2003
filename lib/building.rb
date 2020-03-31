@@ -1,5 +1,6 @@
 class Building
-  attr_reader :units, :renters
+  attr_reader :units
+  attr_accessor :renters
 
   def initialize
     @units = []
@@ -9,14 +10,13 @@ class Building
   def add_unit(unit)
     @units << unit
   end
+  require "pry"; binding.pry
 
-  def add_renter(renter_object)
-    require "pry"; binding.pry
-    #@renters << renter_to_add
-  end
-
+  # def add_renter(renter_object)
+  # require "pry"; binding.pry
+  #   # @renters << renter_to_add
+  # end
   # def average_rent
   #
   # end
-
 end
