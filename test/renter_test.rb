@@ -9,16 +9,13 @@ class RenterTest < Minitest::Test
   def test_it_exists
     renter1 = Renter.new("Jessie")
     assert_instance_of Renter, renter1
+    assert_equal "Jessie", renter1.name
   end
 
 
 end
 
-# pry(main)> renter1 = Renter.new("Jessie")
-# # => #<Renter:0x00007a15c93af80...>
-#
-# pry(main)> renter1.name
-# # => "Jessie"
+
 #
 # pry(main)> unit1 = Apartment.new({number: "A1", monthly_rent: 1200, bathrooms: 1, bedrooms: 1})
 # # => #<Apartment:0x00007fb3ecaae7c0...>
