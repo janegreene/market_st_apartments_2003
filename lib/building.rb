@@ -10,9 +10,9 @@ class Building
   def add_unit(unit)
     @units << unit
   end
-  require "pry"; binding.pry
 
-  # def add_renter(renter_object)
+
+  # def add_renter
   # require "pry"; binding.pry
   #   # @renters << renter_to_add
   # end
